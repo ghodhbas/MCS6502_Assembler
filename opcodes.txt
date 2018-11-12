@@ -1,0 +1,212 @@
+~ < Branch letter
+$ < Swappable value upcoming
+__ < 2 bytes
+____ < 4 bytes
+
+1)  ADC #$__ : 69
+    ADC $__ : 65
+    ADC $__,X : 75
+    ADC $____ : 6D
+    ADC $____,X : 7D
+    ADC $____,Y : 79
+    ADC ($__,X) : 61
+    ADC ($__),Y : 71
+
+2)  AND #$__ : 29
+    AND $__ : 25
+    AND $__,X : 35
+    AND $____ : 2D
+    AND $____,X : 3D
+    AND $____,Y : 39
+    AND ($__,X) : 21
+    AND ($__), Y : 31
+
+3)  ASL A : 0A
+    ASL $__ : 06
+    ASL $__,X : 16
+    ASL $____ : 0E
+    ASL $____,X : 1E
+
+4)  BCC ~ : 90
+
+5)  BCS ~ : B0
+
+6)  BEQ ~ : F0
+
+7)  BIT $__ : 24
+    BIT $____ : 2C
+
+8)  BMI ~ : 30
+
+9)  BNE ~ : D0
+
+10) BPL ~ : 10
+
+11) BRK : 00
+
+12) BVC ~ : 50
+
+13) BVS ~ : 70
+
+14) CLC : 18
+
+15) CLD : D8
+
+16) CLI : 58
+
+17) CLV : B8
+
+18) CMP #$__ : C9
+    CMP $__ : C5
+    CMP $__,X : D5
+    CMP $____,X : DD
+    CMP $____,Y : D9
+    CMP ($__,X) : C1
+    CMP ($__),Y : D1
+
+19) CPX #$__ : E0
+    CPX $__ : E4
+    CPX $____ : EC
+
+20) CPY #$__ : C0
+    CPY $__ : C4
+    CPY $____ : CC
+
+21) DEC $__ : C6
+    DEC $__,X : D6
+    DEC $____ : CE
+    DEC $____,X : DE
+
+22) DEX : CA
+
+23) DEY : 88
+
+24) EOR #$__ : 49
+    EOR $__ : 45
+    EOR $__,X : 55
+    EOR $____ : 4D
+    EOR $____,X : 5D
+    EOR $____,Y : 59
+    EOR ($__,X) : 41
+    EOR ($__),Y : 51
+
+25) INC $__ : E6
+    INC $__,X F6
+    INC $____ : EE
+    INC $____,X : FE
+
+26) INX : E8
+
+27) INY : C8
+
+28) JMP $____ : 4c
+    JMP ($____) : 6C
+
+29) JSR $____ : 20
+    JSR ~ : 20
+
+30) LDA #$__ : A9
+    LDA $__ : A5
+    LDA $__,X : B5
+    LDA $____ : AD
+    LDA $__,X : BD
+    LDA #__,Y : B9
+    LDA ($__,X) : A1
+    LDA ($__),Y : B1
+
+31) LDX #__ : A2
+    LDX $__ : A6
+    LDX $__,Y : B6
+    LDX $____ : AE
+    LDX $____,Y : BE
+
+32) LDY #__ : A0
+    LDY $__ : A4
+    LDY $__,Y : B4
+    LDY $____ : AC
+    LDY $____,Y : BC
+
+33) LSR A : 4A
+    LSR $__ : 46
+    LSR $__,X : 56
+    LSR $____ : 4E
+    LSR $____,X : 5E
+
+34) NOP : EA
+
+35) ORA #$__ : 09
+    ORA $__ : 05
+    ORA $__,X : 15
+    ORA $____ : 0D
+    ORA $____,X : 1D
+    ORA $____,Y : 19
+    ORA ($__, X) : 01
+    ORA ($__),Y : 11
+
+36) PHA : 48
+
+37  PHP : 08
+
+38) PLA : 68
+
+39) PLP : 28
+
+40 )ROL A : 2A
+    ROL $__ : 26
+    ROL $__,X : 36
+    ROL $____, : 1E
+    ROL $____,X : 3E
+
+41) ROR A : 6A
+    ROR $__ : 66
+    ROR $__,X : 76
+    ROR $____ : 6E
+    ROR $____,X : 7E
+
+42) RTI : 40
+
+43) RTS : 60
+
+44) SBC #$__ : E9
+    SBC $__ : E5
+    SBC $__,X : F5
+    SBC $____ : ED
+    SBC $____,X : FD
+    SBC $____,Y : F9
+    SBC ($__,X) : E1
+    SBC ($__),Y : F1
+
+45) SEC : 38
+
+46) SED : F8
+
+47) SEI : 78
+
+48) STA $__ : 85
+    STA $__,X : 95
+    STA $____ : 8D
+    STA $____,X : 9D
+    STA $____,Y : 99
+    STA ($__,X) : 81
+    STA ($__),Y : 91
+
+49) STX $__ : 86
+    STX $__,Y : 96
+    STX $____ : 8E
+
+50) STY $__ : 84
+    STY $__,X : 94
+    STY $____ : 8C
+
+51) TAX : AA
+
+52) TAY : A8
+
+53) TYA : 98
+
+54) TSX : BA
+
+55) TXA : 8A
+
+56) TXS : 9A
+

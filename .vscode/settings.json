@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "linereader.h": "c",
+        "writer.h": "c",
+        "operations_tree.h": "c"
+    }
+}
